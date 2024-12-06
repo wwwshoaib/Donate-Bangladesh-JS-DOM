@@ -7,8 +7,14 @@ addEventListener('click', function(){
     const balanceMainAccount = getTextFieldValueById('total-balance');
     
     // validation input 
-    if(isNaN(donationNoakhali) || donationNoakhali<0 ||(donationNoakhali>balanceMainAccount)) {
+    if(isNaN(donationNoakhali) || donationNoakhali<0) {
         alert('Failed donation');
+        return;
+    } 
+
+    
+    if((donationNoakhali>balanceMainAccount)) {
+        alert('Not enough money');
         return;
     }
 
@@ -34,32 +40,43 @@ addEventListener('click', function(){
     const balanceMainAccount = getTextFieldValueById('total-balance');
     
     // validation input 
-    if(isNaN(donationFeni) || donationFeni<0 ||(donationFeni>balanceMainAccount)) {
+    if(isNaN(donationFeni) || donationFeni<0) {
         alert('Failed donation');
+        return;
+    } 
+
+    if((donationFeni>balanceMainAccount)) {
+        alert('Not enough money');
         return;
     }
 
+    //function to get updated balance
     getUpdateBalance('input-feni', 'feni-balance', 'total-balance');
 
 }) 
 
 
 
-// donation for Noakhali
+// donation for the Injured People
 
-document.getElementById('btn-donation-noakhali').
+document.getElementById('btn-donation-injured-people').
 addEventListener('click', function(){
    
-    const donationNoakhali = getInputFieldValueById('input-noakhali');
+    const donationInjured = getInputFieldValueById('input-injured-people');
     const balanceMainAccount = getTextFieldValueById('total-balance');
     
     // validation input 
-    if(isNaN(donationNoakhali) || donationNoakhali<0 ||(donationNoakhali>balanceMainAccount)) {
+    if(isNaN(donationInjured) || donationInjured<0) {
         alert('Failed donation');
+        return;
+    } 
+
+    if((donationInjured>balanceMainAccount)) {
+        alert('Not enough money');
         return;
     }
 
 
-    getUpdateBalance('input-noakhali', 'noakhali-balance', 'total-balance');
+    getUpdateBalance('input-injured-people', 'injured-people-balance', 'total-balance');
 
 })
