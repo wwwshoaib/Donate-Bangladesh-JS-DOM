@@ -59,7 +59,7 @@
         <div class="stats shadow ">
           <div class="stat flex gap-2 md:gap-3">
             <div class=""><i class="fa-solid fa-coins text-xl "></i></div>
-            <div class="text-xl ">8400 BDT</div>
+            <div> <span id="total-balance">84507 </span>&nbsp;BDT</div>
           </div>
         </div>
         <!-- stat: account balance starts here -->
@@ -93,8 +93,9 @@
           <div class="stats shadow bg-red-100 ">
             <div class="stat flex gap-2 md:gap-3">
               <div class=""><i class="fa-solid fa-coins text-md "></i></div>
-              <div class="text-md ">500 BDT</div>
+              <div> <span id="noakhali-balance">1200 </span>&nbsp;BDT</div>
             </div>
+          
           </div>
           <!-- donation-title -->
           <h1 class="font-semibold text-xl text-gray-800">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -104,11 +105,11 @@
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
           <!-- donation-Noakhali amount -->
-          <input type="text" placeholder="Type your donation amount here"
+          <input id="input-noakhali" type="text" placeholder="Type your donation amount here"
             class="input input-bordered input-accent w-full" />
           <!-- donation - Noakhali button -->
           <div class="flex justify-center">
-            <button class="btn border-t-neutral-400 w-full bg-donate-bangladesh-button">Donate Now</button>
+            <button id="btn-donation-noakhali" class="btn border-t-neutral-400 w-full bg-donate-bangladesh-button">Donate Now</button>
           </div>
         </div>
       </div>
@@ -172,6 +173,7 @@
     </section>
   </main>
 
+  <script src="js/utilities.js"></script>
+  <script src="js/donation.js"></script>
 </body>
-
 </html>
