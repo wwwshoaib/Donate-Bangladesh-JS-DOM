@@ -28,6 +28,8 @@ document.getElementById('btn-donation-noakhali').
         //function to get updated balance in Noakhali
         getUpdateBalance('input-noakhali', 'noakhali-balance', 'total-balance');
 
+       
+
         // transaction history
         //get id where the transaction will be added
        const transactionDiv = document.getElementById('transaction-div');
@@ -44,6 +46,8 @@ document.getElementById('btn-donation-noakhali').
        
        ` 
        document.getElementById('transaction-div').appendChild(div);
+
+      
 
        document.getElementById('input-noakhali').value = '';
 
