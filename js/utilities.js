@@ -25,20 +25,3 @@ function getUpdateBalance(area_donation, area_balance, total_balance) {
     return currentAreaBalance, currentTotalBalance;
 }
 
-
-function showModal(id_donation_area, id_modal) {
-    const modalMia = document.getElementById(id_modal);
-    const donation = getInputFieldValueById(id_donation_area);
-
-    if( donation == true) {
-        modalMia.disabled = false;
-    } 
-
-    else {
-        modalMia.disabled = true;
-    }
-  
-
-
-}
-
