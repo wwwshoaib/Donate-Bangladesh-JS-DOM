@@ -73,16 +73,16 @@
   <!-- button -->
   <div class="text-center   p-10 bg-slate-50">
     <!-- button: donation -->
-    <button class="btn bg-gray-200">Donation</button>
+    <button id="btn-to-show-donation" class="btn bg-gray-200">Donation</button>
     <!-- button: history -->
-    <button class="btn  bg-gray-200">History</button>
+    <button id="btn-to-show-transaction" class="btn  bg-gray-200">History</button>
   </div>
 
 
 
   <main>
     <!-- Section: donation -->
-    <section class="max-w-screen-xl mx-auto p-12 space-y-10">
+    <section id="show-donation-section" class="max-w-screen-xl mx-auto p-12 space-y-10">
       <!-- donation card - Noakhali starts here -->
       <div class="block  md:flex border-blue-100 border-2 p-10 h-max gap-5 ">
         <div class="flex-1">
@@ -177,9 +177,20 @@
         </div>
         <!-- donation card -for the injured people ends here -->
     </section>
+
+    <!-- Transaction history -->
+     <section id="show-transaction-section" class="hidden max-w-screen-xl mx-auto p-12 space-y-10 shadow-xl]">
+      <div class="p-1  md:p-12  border-blue-100 border-2  h-max gap-5">
+        <p class="text-3xl font-semibold text-center ">Transaction History</p>
+
+        
+      </div>
+     </section>
   </main>
 
   <script src="js/utilities.js"></script>
+  <script src="js/features.js"></script>
   <script src="js/donation.js"></script>
+ 
 </body>
 </html>
