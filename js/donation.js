@@ -36,13 +36,16 @@ document.getElementById('btn-donation-noakhali').
        // create an element to add transaction
        const div = document.createElement('div')
        div.classList.add('bg-blue-100');
+       div.classList.add('p-5');
        const currentDateTime = new Date().toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
        div.innerHTML = `
-       <h4 class = "text-2xl fond-semibold">Donation for the Noakhali flood: </h4>
-       <p> Tk. ${donationNoakhali} credited in Noakhali flood affected account on ${currentDateTime}
+       <h4 class = "text-xl fond-semibold">Donation for the Noakhali flood: </h4>
+       <p class = "text-md"> Tk ${donationNoakhali} credited in Noakhali flood affected account on ${currentDateTime}
        
        ` 
        document.getElementById('transaction-div').appendChild(div);
+
+       document.getElementById('input-noakhali').value = '';
 
 
 
@@ -80,13 +83,16 @@ document.getElementById('btn-donation-feni').
        // create an element to add transaction
        const div = document.createElement('div')
        div.classList.add('bg-orange-100');
+       div.classList.add('p-5');
        const currentDateTime = new Date().toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
        div.innerHTML = `
-       <h4 class = "text-2xl fond-semibold">Donation for the Feni flood: </h4>
-       <p> Tk. ${donationFeni} credited in Noakhali flood affected account on ${currentDateTime}
+       <h4 class = "text-xl fond-semibold">Donation for the Feni flood: </h4>
+       <p class="text-md"> Tk ${donationFeni} credited in Noakhali flood affected account on ${currentDateTime}
        
        ` 
        document.getElementById('transaction-div').appendChild(div);
+
+       document.getElementById('input-feni').value = '';
 
     })
 
@@ -122,14 +128,17 @@ document.getElementById('btn-donation-injured-people').
        // create an element to add transaction
        const div = document.createElement('div')
        div.classList.add('bg-red-100');
+       div.classList.add('p-5');
        const currentDateTime = new Date().toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
        div.innerHTML = `
-       <h4 class = "text-2xl fond-semibold">Donation for the injured people
+       <h4 class = "text-xl fond-semibold">Donation for the injured people
         in Anti-discrimination Students Movement 2024: </h4>
-       <p> Tk. ${donationInjured} credited in  injured people account on ${currentDateTime}
+       <p class = "text-md"> Tk ${donationInjured} credited in  injured people account on ${currentDateTime}
        
        ` 
        document.getElementById('transaction-div').appendChild(div);
+
+       document.getElementById('input-injured-people').value = '';
 
     
 
