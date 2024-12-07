@@ -7,7 +7,6 @@ document.getElementById('btn-donation-noakhali').
         const balanceMainAccount = getTextFieldValueById('total-balance');
 
 
-
         // validation input 
         if (isNaN(donationNoakhali) || donationNoakhali < 0) {
             alert('Failed donation');
@@ -28,9 +27,6 @@ document.getElementById('btn-donation-noakhali').
         //function to get updated balance in Noakhali
         getUpdateBalance('input-noakhali', 'noakhali-balance', 'total-balance');
 
-
-
-
         // transaction history
         //get id where the transaction will be added
         const transactionDiv = document.getElementById('transaction-div');
@@ -46,6 +42,7 @@ document.getElementById('btn-donation-noakhali').
        <p class = "text-md"> Tk ${donationNoakhali} credited in Noakhali flood affected account on ${currentDateTime}
        
        `
+        document.getElementById('transaction-div').appendChild(div);
         document.getElementById('input-noakhali').value = '';
 
     })
@@ -97,7 +94,6 @@ document.getElementById('btn-donation-feni').
        
        `
         document.getElementById('transaction-div').appendChild(div);
-
         document.getElementById('input-feni').value = '';
 
     })
@@ -129,9 +125,6 @@ document.getElementById('btn-donation-injured-people').
             modal_id.showModal();
         }
 
-
-
-
         //function to get updated balance for the injured people
         getUpdateBalance('input-injured-people', 'injured-people-balance', 'total-balance');
 
@@ -152,5 +145,4 @@ document.getElementById('btn-donation-injured-people').
        `
         document.getElementById('transaction-div').appendChild(div);
         document.getElementById('input-injured-people').value = '';
-
     })
